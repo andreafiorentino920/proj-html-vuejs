@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-      <div class="container pt-4 d-flex justify-content-between align-items-center">
+      <div class="container container-menu pt-5 d-flex justify-content-between align-items-center">
         <div class="logo">
         </div>
         <div class="menu">
@@ -26,6 +26,14 @@
           </ul>
         </div>
       </div>
+      <div class="d-flex justify-content-center">
+        <div class="container-hero d-flex flex-column align-items-center">
+        <h1>NO PAIN NO GAIN</h1>
+        <p>Motivation is what gets you started. Habit is what keeps you going</p>
+        <button>JOIN US TODAY</button>
+      </div>
+      </div>
+      
   </div>
 </template>
 
@@ -40,7 +48,27 @@ export default {
   background-image: url("../assets/images/home-banner.jpg");
   background-size:cover; 
   height: 800px;
-  .container{
+
+  .container-hero{
+    margin-top: 170px;
+    h1{
+      font-size: 100px;
+      color: white;
+    }
+    p{
+      font-size: 20px;
+      color: white;
+    }
+
+    button{
+      background-color: transparent;
+      padding: 10px 20px 10px 20px;
+      color: #a7a6a5;
+      border: #a7a6a5 solid 2px;
+    }
+  }
+
+  .container-menu{
       .logo{
       background-image: url("../assets/images/gym_logo_1x.png");
       width: 250px;
@@ -61,7 +89,9 @@ export default {
           }
         }
       }
+      
   }
+  
  
 }
 
