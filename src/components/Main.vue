@@ -187,28 +187,25 @@
         <img src="../assets/images/divider-xx-red.png" alt="">
         <div class="container d-flex flex-row justify-content-center">
           <div class="row">
-            <div class="card d-flex flex-column">
+            <div class="card d-flex flex-column col-4">
              <img src="../assets/images/blog1.jpg" alt="">
              <div class="text">
-              <h5>Ann Baker</h5>
-              <h5>Personal Trainer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <h4>Train with free weights or your body weight?</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, voluptate deserunt asperiores beatae aliquam magni necessitatibus, accusantium tempore repellendus officiis amet tempora expedita saepe obcaecati, magnam aperiam? Illum, accusantium perspiciatis.</p>
              </div>
            </div>
            <div class="card d-flex flex-column">
              <img src="../assets/images/blog6.jpg" alt="">
              <div class="text">
-              <h5>Anne Warren</h5>
-              <h5>Personal Trainer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <h4>Nutritional advice that will keep your training</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, voluptate deserunt asperiores beatae aliquam magni necessitatibus, accusantium tempore repellendus officiis amet tempora expedita saepe obcaecati, magnam aperiam? Illum, accusantium perspiciatis.</p>
              </div>
            </div>
            <div class="card d-flex flex-column">
               <img src="../assets/images/trainer4.jpg" alt="">
               <div class="text">
-              <h5>Peter Rice</h5>
-              <h5>Personal Trainer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <h4>The myths of shedding body fat explored</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, voluptate deserunt asperiores beatae aliquam magni necessitatibus, accusantium tempore repellendus officiis amet tempora expedita saepe obcaecati, magnam aperiam? Illum, accusantium perspiciatis.</p>
              </div>
            </div>
           </div>
@@ -216,25 +213,22 @@
             <div class="card d-flex flex-column">
              <img src="../assets/images/blog4.jpg" alt="">
              <div class="text">
-              <h5>Ann Baker</h5>
-              <h5>Personal Trainer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <h4>Simple principles for your next workout</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, voluptate deserunt asperiores beatae aliquam magni necessitatibus, accusantium tempore repellendus officiis amet tempora expedita saepe obcaecati, magnam aperiam? Illum, accusantium perspiciatis.</p>
              </div>
            </div>
            <div class="card d-flex flex-column">
              <img src="../assets/images/trainer3.jpg" alt="">
              <div class="text">
-              <h5>Anne Warren</h5>
-              <h5>Personal Trainer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <h4>To be number one, train like you're number two</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, voluptate deserunt asperiores beatae aliquam magni necessitatibus, accusantium tempore repellendus officiis amet tempora expedita saepe obcaecati, magnam aperiam? Illum, accusantium perspiciatis.</p>
              </div>
            </div>
            <div class="card d-flex flex-column">
               <img src="../assets/images/trainer1-400x297.jpg" alt="">
               <div class="text">
-              <h5>Peter Rice</h5>
-              <h5>Personal Trainer</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <h4>Top 5 mistakes every gym member makes</h4>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo, voluptate deserunt asperiores beatae aliquam magni necessitatibus, accusantium tempore repellendus officiis amet tempora expedita saepe obcaecati, magnam aperiam? Illum, accusantium perspiciatis.</p>
              </div>
            </div>
           </div>
@@ -319,6 +313,7 @@ export default {
       padding-top: 80px;
       background-color: #25292b;
       .container-card{
+        margin-bottom: 100px;
         width: 75%;
       }
       h1{
@@ -348,7 +343,7 @@ export default {
         }
         .container-card-2{
           justify-content: center;
-          margin-top: 30px;
+          margin: 30px 0;
           
         }
 
@@ -453,8 +448,11 @@ export default {
               }
             }
           }
-        h5,p{
+        h4{
         color: white;
+        }
+        p{
+          color: #aaa9a9;
         }
       }
         }
