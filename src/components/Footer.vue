@@ -12,7 +12,7 @@
               </ul>
               
             </div>
-            <div class="col-3">
+            <div class="col-3  center">
               <h5>RECENT POST</h5>
               <ul>
                 <li :key="index" v-for="(link,index) in menu2">
@@ -30,7 +30,7 @@
               </ul>
             </div>
             <div class="col-3">
-              <img :src="'../assets/images/' + foto.link" alt="">
+              <img src="../assets/images/gym_ad-compressor.jpg" alt="">
             </div>
           </div>
         </div>
@@ -38,14 +38,14 @@
       <div class="footer-bottom">
         <div class="container">
           <div class="row">
-            <div class="col-8">
+            <div class="col-10 d-flex align-items-center">
               <ul class="d-flex flex-row">
                 <li v-for="(link,index) in menu4" :key="index">
                   {{link.text}}
                 </li>
               </ul>
             </div>
-            <div class="col-4 d-flex align-items-center">
+            <div class="col-2 d-flex align-items-center justify-content-end">
               <div class="row">
                 <div class="icon d-flex justify-content-center align-items-center" :key="index" v-for="(icon,index) in icons">
                 <i :class="[icon.class]"></i>
@@ -96,9 +96,6 @@ export default {
           time:"09:00 - 21:00"
         }
       ],
-      foto:{
-        link:"gym_ad-compressor.jpg"
-      },
       menu4:[
         {
           text:"Copyright 2012 - 2020"
@@ -136,20 +133,36 @@ export default {
     }
     ul{
       list-style-type: none;
+      padding: 0;
       li{
+      padding: 5px 5px 10px 0;
       color: #999999;
     }
     }
   .footer-top{
+    padding: 40px 0;
     background-color: #1f2123;
+    .center{
+      li{
+        border-bottom: solid 1px;
+      }
+    }
   }
   .footer-bottom{
+    padding: 40px 0;
     background-color: #1a1c1e;
     .container{
+      width: 75%;
       .row{
+        li{
+          padding-left: 15px;
+          padding-right: 15px;
+          border-right: solid 1px #999999;
+        }
         .icon:nth-child(2){
           margin: 0 10px ;
         }
+
         .icon{
           font-size: 25px;
           color: white;

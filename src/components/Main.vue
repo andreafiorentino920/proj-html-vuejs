@@ -193,17 +193,6 @@
               <h5>Ann Baker</h5>
               <h5>Personal Trainer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
-              <div class="icons d-flex flex-row">
-                <div class="icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-              </div>
              </div>
            </div>
            <div class="card d-flex flex-column">
@@ -212,18 +201,6 @@
               <h5>Anne Warren</h5>
               <h5>Personal Trainer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
-              
-               <div class="icons d-flex flex-row">
-                <div class="icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-              </div>
              </div>
            </div>
            <div class="card d-flex flex-column">
@@ -232,17 +209,6 @@
               <h5>Peter Rice</h5>
               <h5>Personal Trainer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
-               <div class="icons d-flex flex-row">
-                <div class="icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-              </div>
              </div>
            </div>
           </div>
@@ -253,17 +219,6 @@
               <h5>Ann Baker</h5>
               <h5>Personal Trainer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
-              <div class="icons d-flex flex-row">
-                <div class="icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-              </div>
              </div>
            </div>
            <div class="card d-flex flex-column">
@@ -272,18 +227,6 @@
               <h5>Anne Warren</h5>
               <h5>Personal Trainer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
-              
-               <div class="icons d-flex flex-row">
-                <div class="icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-              </div>
              </div>
            </div>
            <div class="card d-flex flex-column">
@@ -292,24 +235,16 @@
               <h5>Peter Rice</h5>
               <h5>Personal Trainer</h5>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
-               <div class="icons d-flex flex-row">
-                <div class="icon">
-                  <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-twitter"></i>
-                </div>
-                <div class="icon">
-                  <i class="fab fa-instagram"></i>
-                </div>
-              </div>
              </div>
            </div>
+          </div>
+          <div>
+            <button>READ ALL ARTICLES</button>
           </div>
         </div>
       </section>
       <section class="goals">
-        <div class="container d-flex justify-content-center align-items-center">
+        <div class="container d-flex justify-content-around align-items-center">
             <div>
               <h2>Achieve Your Fitness Goals</h2>
               <p>Flexible membership packages to suit all levels of athletic and achive your fitness goals</p>
@@ -383,6 +318,9 @@ export default {
     .result{
       padding-top: 80px;
       background-color: #25292b;
+      .container-card{
+        width: 75%;
+      }
       h1{
         color: white;
         margin-bottom: 20px;
@@ -429,7 +367,7 @@ export default {
       }
     }
     .trainer{
-      padding-top: 100px;
+      padding: 100px 0 20px 0;
       background-color: #1f2123;
         button{
           background-color: transparent;
@@ -474,15 +412,27 @@ export default {
         }
     }
     .news{
-      padding-top:100px ;
+      padding:100px 0;
       background-color: #25292b;
       .container{
         flex-wrap: wrap;
+        button{
+          margin-top: 80px;
+          background-color: transparent;
+          color: #a8a9aa;
+          border: 1px solid #a8a9aa;
+          padding: 20px 30px;
+        }
         .row{
-          width: 100%;
+          // width: 100%;
+          .card:nth-child(2){
+            margin-left:20px;
+            margin-right: 20px;
+          }
           .card{
+          padding: 0;
           flex-wrap:wrap ;
-          width: calc(100% / 3);
+          width: calc((100% / 3) - 40px);
           border: 0;
           margin-top: 40px;
           background-color: #1f2123;
