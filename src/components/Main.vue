@@ -182,8 +182,145 @@
           <button>VIEW ALL TRAINERS</button>
         </div>
       </section>
-      <section class="news"></section>
-      <section class="goals"></section>
+      <section class="news d-flex align-items-center flex-column">
+        <h1 class="white">PERFORMANCE NEWS</h1>
+        <img src="../assets/images/divider-xx-red.png" alt="">
+        <div class="container d-flex flex-row justify-content-center">
+          <div class="row">
+            <div class="card d-flex flex-column">
+             <img src="../assets/images/blog1.jpg" alt="">
+             <div class="text">
+              <h5>Ann Baker</h5>
+              <h5>Personal Trainer</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <div class="icons d-flex flex-row">
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+             </div>
+           </div>
+           <div class="card d-flex flex-column">
+             <img src="../assets/images/blog6.jpg" alt="">
+             <div class="text">
+              <h5>Anne Warren</h5>
+              <h5>Personal Trainer</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              
+               <div class="icons d-flex flex-row">
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+             </div>
+           </div>
+           <div class="card d-flex flex-column">
+              <img src="../assets/images/trainer4.jpg" alt="">
+              <div class="text">
+              <h5>Peter Rice</h5>
+              <h5>Personal Trainer</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+               <div class="icons d-flex flex-row">
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+             </div>
+           </div>
+          </div>
+          <div class="row">
+            <div class="card d-flex flex-column">
+             <img src="../assets/images/blog4.jpg" alt="">
+             <div class="text">
+              <h5>Ann Baker</h5>
+              <h5>Personal Trainer</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              <div class="icons d-flex flex-row">
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+             </div>
+           </div>
+           <div class="card d-flex flex-column">
+             <img src="../assets/images/trainer3.jpg" alt="">
+             <div class="text">
+              <h5>Anne Warren</h5>
+              <h5>Personal Trainer</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+              
+               <div class="icons d-flex flex-row">
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+             </div>
+           </div>
+           <div class="card d-flex flex-column">
+              <img src="../assets/images/trainer1-400x297.jpg" alt="">
+              <div class="text">
+              <h5>Peter Rice</h5>
+              <h5>Personal Trainer</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odio molestias </p>
+               <div class="icons d-flex flex-row">
+                <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-twitter"></i>
+                </div>
+                <div class="icon">
+                  <i class="fab fa-instagram"></i>
+                </div>
+              </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </section>
+      <section class="goals">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+              <h2>Achieve Your Fitness Goals</h2>
+              <p>Flexible membership packages to suit all levels of athletic and achive your fitness goals</p>
+            </div>
+            <div>
+              <button class="join">
+                JOIN US
+              </button>
+            </div>
+        </div>
+      </section>
   </div>
 </template>
 
@@ -335,7 +472,61 @@ export default {
         .card:nth-child(2){
           margin: 40px 30px 0 30px ;
         }
+    }
+    .news{
+      padding-top:100px ;
+      background-color: #25292b;
+      .container{
+        flex-wrap: wrap;
+        .row{
+          width: 100%;
+          .card{
+          flex-wrap:wrap ;
+          width: calc(100% / 3);
+          border: 0;
+          margin-top: 40px;
+          background-color: #1f2123;
+          img{
+            width: 100%;
+          }
+          .text{
+            margin-top: 30px;
+            padding: 0 40px 0 40px;
+            .icons{
+              width: 20px;
+              color: white;
+              .icon{
+                margin-bottom: 50px;
+                margin-right: 15px;
+                padding: 15px 20px;
+                background-color: #1f2123;
+              }
+            }
+          }
+        h5,p{
+        color: white;
+        }
       }
+        }
+        
+      }
+      
+    }
+    .goals{
+      background-image: url("../assets/images/home-parallax.jpg");
+      .container{
+        padding: 80px 0;
+          h2,p{
+            color: white;
+          }
+          .join{
+              background-color: transparent;
+              border: 1px solid white;
+              color: white;
+              padding: 12px 35px;
+            }
+        }
+    }
     .form{
       button{
         background-color: #ee6059;
@@ -357,6 +548,5 @@ export default {
     .two-x{
       width: 2%;
     }
-    
   }
 </style>

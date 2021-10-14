@@ -5,24 +5,7 @@
         </div>
         <div class="menu">
           <ul class="d-flex flex-row">
-            <li>
-              <a class="selected" href="#">HOME</a>
-            </li>
-            <li>
-              <a href="#">ABOUT US </a>
-            </li>
-            <li>
-              <a href="#">FACILITIES </a>
-            </li>
-            <li>
-              <a href="#">MEMBERSHIP </a>
-            </li>
-            <li>
-              <a href="#">TESTIMONIALS</a>
-            </li>
-            <li>
-              <a href="#">BLOG</a>
-            </li>
+            <li v-for="(link,index) in menu" :key="index">{{link.text}}</li>
           </ul>
         </div>
       </div>
@@ -39,7 +22,37 @@
 
 <script>
 export default {
-    name:"Header"
+  name:"Header",
+  data(){
+    return{
+      menu:[
+        {
+            text:"HOME",
+            url:"",
+        },
+        {
+            text:"ABOUT US",
+            url:"",
+        },
+        {
+            text:"FACILITIES",
+            url:"",
+        },
+        {
+            text:"MEMBERSHIP",
+            url:"",
+        },
+        {
+            text:"TESTIMONIALS",
+            url:"",
+        },
+        {
+            text:"BLOG",
+            url:"",
+        }
+      ]
+    }
+  }
 }
 </script>
 
@@ -48,6 +61,12 @@ export default {
   background-image: url("../assets/images/home-banner.jpg");
   background-size:cover; 
   height: 800px;
+
+  .menu{
+    li{
+      color: white;
+    }
+  }
 
   .container-hero{
     margin-top: 170px;
